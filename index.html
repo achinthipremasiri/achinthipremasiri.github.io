@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drifting Petals - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #4CAF50; /* A fresh green for agriculture */
+            --secondary-color: #FFC107; /* A warm yellow for the magic wand */
+            --background-color: #F7F7F7; /* Light, airy background */
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            cursor: none; /* Hide the default cursor */
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        /* Profile Section (Left) */
+        .profile-photo-container {
+            flex-shrink: 0;
+            width: 300px;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid var(--primary-color);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+            border-color: var(--secondary-color);
+        }
+
+        /* Content Section (Right) */
+        .content {
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            margin-bottom: 0.1em;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #555;
+            margin-top: 0;
+        }
+
+        /* Education List Style */
+        .education-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .education-list li {
+            background-color: #ffffff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: border-left-color 0.3s ease;
+        }
+
+        .education-list li:hover {
+            border-left-color: var(--secondary-color);
+        }
+
+        .degree {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* The strong tag inside the li will handle the bolding of the university name */
+        .education-list li strong {
+            font-weight: 400; /* Overriding default strong weight for a cleaner look */
+            color: var(--text-color);
+        }
+
+        .specialty {
+            font-size: 1.2em;
+            color: #E91E63;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px 0;
+            border-top: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        /* --- Magic Wand Cursor & Blooming Trail CSS --- */
+        .magic-wand-cursor {
+            position: fixed;
+            width: 25px;
+            height: 25px;
+            pointer-events: none;
+            z-index: 10000;
+            font-size: 25px;
+            line-height: 1;
+            text-shadow: 0 0 5px var(--secondary-color);
+            transform: translate(-50%, -50%) rotate(-20deg);
+            transition: transform 0.1s ease-out;
+        }
+
+        .bloom-trail {
+            position: fixed;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 14px;
+            line-height: 1;
+            opacity: 0.8;
+            transform: translate(-50%, -50%) scale(0);
+            animation: bloom-fade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        }
+
+        @keyframes bloom-fade {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.9;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="magic-wand" class="magic-wand-cursor">✨</div>
+
+    <div class="container">
+        <div class="profile-photo-container">
+            <img src="Achinthi Premasiri.jpeg" alt="Achinthi's Profile Photo" class="profile-photo">
+            
+            <p class="specialty">
+                Specializing in <strong>Plant Tissue Culture</strong> 🔬
+            </p>
+        </div>
+        
+        <div class="content">
+            <h1>Achinthi Premasiri</h1>
+            <h2>Agricultural Scientist & Researcher</h2>
+            
+            <p>
+                A dedicated and passionate agricultural scientist with a strong foundation in plant biology and advanced research methodologies. My primary expertise lies in <strong>Tissue Culture</strong>, a vital technique for mass-producing disease-free, high-quality plant material and advancing crop improvement. Driven by a commitment to sustainable agriculture and food security in Sri Lanka.
+            </p>
+
+            <p>
+                Currently pursuing MPhil research focused on optimizing micropropagation protocols for indigenous crops.
+            </p>
+
+            <h3>Educational Journey</h3>
+            <ul class="education-list">
+                <li>
+                    <span class="degree">MPhil Candidate</span>
+                    <strong>University of Ruhuna</strong>
+                </li>
+                <li>
+                    <span class="degree">MSc in Plant Biotechnology</span>
+                    <strong>University of Ruhuna</strong> </li>
+                <li>
+                    <span class="degree">BSc in Agriculture (BSc. Hons)</span>
+                    <strong>University of Jaffna</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const wand = document.getElementById('magic-wand');
+        const blooms = ['🌸', '🌿', '🌱', '✨', '🍀', '🍄', '🌻', '🌺', '🌷']; // Emojis for the blooming effect
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX, y = e.clientY;
+
+            // 1. Update Magic Wand position
+            wand.style.left = x + 'px';
+            wand.style.top = y + 'px';
+
+            // 2. Create and Animate the Blooming Trail
+            // Only create a bloom every few pixels to avoid clutter and improve performance
+            if (Math.random() > 0.7) { // Controls the density of the trail (lower number for fewer blooms)
+                const trail = document.createElement('div');
+                trail.className = 'bloom-trail';
+                
+                // Randomly select a bloom emoji
+                const bloomEmoji = blooms[Math.floor(Math.random() * blooms.length)];
+                trail.innerHTML = bloomEmoji;
+
+                // Position the trail element slightly scattered around the cursor
+                const offsetX = (Math.random() - 0.5) * 10;
+                const offsetY = (Math.random() - 0.5) * 10;
+                trail.style.left = (x + offsetX) + 'px';
+                trail.style.top = (y + offsetY) + 'px';
+
+                document.body.appendChild(trail);
+
+                // 3. Remove the trail element after its animation is complete (0.8s)
+                setTimeout(() => trail.remove(), 800);
+            }
+        });
+    </script>
+
+</body>
+</html>
