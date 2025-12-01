@@ -55,7 +55,7 @@ const Skills: React.FC = () => {
         <div className="mt-10 p-6 bg-gradient-to-br from-primary/10 to-transparent rounded-xl border border-primary/20">
             <h3 className="font-serif text-xl font-bold text-primary mb-3">Key Competencies</h3>
             <div className="flex flex-wrap gap-2">
-                {['Data Analysis', 'Greenhouse Farming', 'Lab Protocols', 'Satellite Forecasting', 'Molecular Biology'].map(tag => (
+                {['Data Analysis', 'Greenhouse Farming', 'Lab Protocols', 'Yield Forecasting', 'Molecular Biology'].map(tag => (
                     <span key={tag} className="px-3 py-1 bg-white text-primary rounded-full text-sm font-bold shadow-sm">
                         {tag}
                     </span>

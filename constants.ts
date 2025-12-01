@@ -82,15 +82,13 @@ export const PUBLICATIONS: PublicationItem[] = [
     id: "p1",
     title: "Medicinal Plant Cultivation and Post-Harvest Management",
     citation: "Propagation and Sustainable Utilization of Medicinal Plants (Eds.), CRC Press, Taylor & Francis Group, USA.",
-    status: "In Press",
-    link: "#"
+    status: "In Press"
   },
   {
     id: "p2",
     title: "Plant Tissue Culture for Mass Production of Medicinal Plants",
     citation: "Propagation and Sustainable Utilization of Medicinal Plants (Eds.), CRC Press, Taylor & Francis Group, USA.",
-    status: "In Press",
-    link: "#"
+    status: "In Press"
   },
   {
     id: "p3",
@@ -99,26 +97,45 @@ export const PUBLICATIONS: PublicationItem[] = [
     status: "In Preparation"
   },
   {
-    id: "p4",
+    id: "p5",
+    title: "ISSR Marker Based Authentication of In Vitro-Derived Medicinal Plant Lines for Enhanced Phytochemical Production",
+    citation: "Springer Science+Business Media, LLC, New York, USA.",
+    status: "In Preparation"
+  },
+  {
+    id: "p6",
+    title: "Efficient In Vitro Propagation Approach for Mass Multiplication of Curcuma longa L (Turmeric)",
+    citation: "The 3rd International Online Conference on Agriculture",
+    status: "Published",
+    link: "https://sciforum.net/manuscripts/24658/slides.pdf"
+  },
+  {
+    id: "p7",
+    title: "Optimized in vitro seed culture for disease free propagation of curry leaf",
+    citation: "International Symposium on Agriculture and Environment, University of Ruhuna.",
+    status: "Published",
+    link: "http://ir.lib.ruh.ac.lk/xmlui/handle/iruor/20411?show=full"
+  },
+  {
+    id: "p8",
     title: "Development of an in vitro protocol for efficient shoot proliferation in Murraya koenigii",
     citation: "International Conference on Agriculture and Plantation Management (InCAPM2025), Wayamba University.",
     status: "Published",
-    link: "#"
+    link: "https://incapm.mkd.wyb.ac.lk/wp-content/uploads/2025/05/Technical-Sessions_InCAPM-2025-1.pdf"
   }
 ];
 
 export const SKILLS = [
-  "Scientific Writing",
-  "Literature Review & Research Synthesis",
+  "Tissue Culture",
+  "Phytochemical Extraction",
   "Data Analysis & Interpretation",
-  "Editing & Proofreading",
+  "Experimental Design",
   "Communication & Presentation",
-  "Reference Management & Citation Skills"
 ];
 
 export const LANGUAGES = [
-  { name: "English", level: "Fluent" },
-  { name: "Sinhala", level: "Fluent" },
+  { name: "English", level: "Full Professional Proficiency" },
+  { name: "Sinhala", level: "Native" },
   { name: "Tamil", level: "Intermediate" }
 ];
 
